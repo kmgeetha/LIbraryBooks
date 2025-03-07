@@ -1,0 +1,106 @@
+.addbooks{
+    height: 90vh;
+    width: 100%;
+}
+.addbooks .form-con{
+    background-color: #faf7f7;
+    height: auto;
+    width: 80%;
+    margin:40px auto;
+}
+.addbooks .form-con form{
+    height: 100%;
+    display: grid;
+    flex-direction: column;
+}
+.addbooks  .input{
+    margin: auto;
+    width: 100%;
+}
+.addbooks h1{
+    text-align: center;
+    margin: auto;
+}
+.addbooks input::placeholder{
+    text-align: center;
+}
+.addbooks .form-con  label{
+    margin-left: 180px;
+    color: #0a62a3;
+}
+.addbooks form input{
+    height: 50px;
+    width: 65%;
+    margin: 10px auto;
+    border-radius:12px;
+    border: 1px solid #ccc;
+}
+.addbooks .but1{
+    display: block;
+    margin: 100px auto ;
+    height: 7vh;
+    width: 35%;
+    border-radius: 12px;
+    background-color: cadetblue;
+    border: none;
+}
+.addbooks input:focus-visible{
+    border: 1px solid rgb(29, 4, 252);
+}
+.addbooks .textarea-field {
+    margin: auto;
+}
+
+@media (max-width: 1024px) {
+    .addbooks .form-con {
+        width: 90%;
+    }
+
+    .addbooks form input,
+    .addbooks form textarea,
+    .addbooks .but1 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .addbooks {
+        padding: 10px;
+    }
+
+    .addbooks h1 {
+        font-size: 24px;
+    }
+
+    .addbooks form input,
+    .addbooks form textarea {
+        font-size: 14px;
+    }
+
+    .addbooks .but1 {
+        width: 70%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .addbooks .form-con {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .addbooks h1 {
+        font-size: 22px;
+    }
+
+    .addbooks form input,
+    .addbooks form textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .addbooks .but1 {
+        width: 90%;
+        font-size: 16px;
+    }
+}

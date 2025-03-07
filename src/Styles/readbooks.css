@@ -1,0 +1,151 @@
+/* General Page Styling */
+.readbook {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Back Button */
+.backbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: purple;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.backbtn:hover {
+  background: darkmagenta;
+}
+
+/* Read Book Container */
+.readbookbody {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 90%;
+  max-width: 1100px;
+  gap: 20px;
+}
+
+.readbookbody img {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Text Content */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Description Boxes */
+.short, .long {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.para {
+  padding: 10px;
+  background: #ffffff;
+  border-left: 4px solid teal;
+  border-radius: 8px;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+/* Loading State */
+.loading {
+  font-size: 18px;
+  color: #666;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .readbookbody {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .readbookbody img {
+    width: 180px;
+    height: auto;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .head {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .para {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .backbtn {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .readbookbody img {
+    width: 150px;
+  }
+
+  .head {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .para {
+    font-size: 12px;
+    padding: 6px;
+  }
+}

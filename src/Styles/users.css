@@ -1,0 +1,126 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.users {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.users .header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.users .header h1 {
+    font-size: 24px;
+}
+
+.users .header .adduser {
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.users .header .adduser:hover {
+    transform: scale(1.1);
+}
+
+/* Table Styling */
+.table table {
+    width: 95%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.table table thead {
+    background: #007BFF;
+    color: white;
+}
+
+.table table th, .table table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Button Styling */
+.users .button {
+    padding: 8px 12px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.users .button:hover {
+    background: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .users .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .users .header .adduser {
+        margin-top: 10px;
+    }
+
+    .table table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .table table th, .table table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .users .header h1 {
+        font-size: 20px;
+    }
+
+    .users .header .adduser {
+        padding: 8px 12px;
+    }
+
+    .table table {
+        font-size: 12px;
+    }
+
+    .table table th, .table table td {
+        padding: 6px;
+    }
+}

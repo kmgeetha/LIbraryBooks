@@ -1,0 +1,83 @@
+/* About Page Container */
+.about{
+    height: 90vh;
+    width: 100%;
+    background: url('../Images/book.jpg')   ;
+    background-size: contain;
+}
+
+/* Content Wrapper */
+.about .cont {
+    display: flex;
+
+    width: 100%;
+    padding: 5%;
+}
+
+/* Content Box */
+.about .container {
+    background-image: linear-gradient(to right top, #160bab77, #5446c07a, #8378d394, #afa9e2, #7a76c6c0);
+    width: 50%;
+    max-width: 600px;
+    min-width: 300px;
+    color: #fff;
+    text-align: justify;
+    padding: 5%;
+    border-radius: 20px;
+    line-height: 1.5rem;
+    font-size: 22px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about .container:hover {
+    transform: scale(1.02);
+}
+
+/* First Letter Styling */
+.about .container::first-letter {
+    color: rgba(255, 0, 0, 0.815);
+    font-weight: bold;
+    font-size: 35px;
+    padding: 0px 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about .container {
+        width: 70%;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        height: auto;
+        padding: 10% 5%;
+    }
+
+    .about .cont {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .container {
+        width: 80%;
+        font-size: 18px;
+        line-height: 1.4rem;
+        padding: 4%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about .container {
+        width: 90%;
+        font-size: 16px;
+        padding: 5%;
+    }
+
+    .about .container::first-letter {
+        font-size: 30px;
+    }
+}

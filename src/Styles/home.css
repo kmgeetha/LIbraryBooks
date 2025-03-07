@@ -1,0 +1,98 @@
+/* Home Page Container */
+.home {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 90vh;
+    background: url('../Images/book.jpg')   ;
+    background-size: contain;
+}
+
+/* Header Styling */
+.home .header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #95c60f;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Content Box */
+.home .container {
+    background-image: linear-gradient(to right, #051937b8, #004d7ab5, #008793cb, #00bf73a3, #a6eb12b5);
+    padding: 5%;
+    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
+    color: #fff;
+    text-align: justify;
+    border-radius: 20px;
+    line-height: 1.5rem;
+    font-size: 22px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.home .container:hover {
+    transform: scale(1.02);
+}
+
+/* First Letter Styling */
+.home p::first-letter {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Strong Text */
+.home .container strong {
+    color: rgb(112, 110, 114);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .home .header {
+        font-size: 35px;
+    }
+
+    .home .container {
+        width: 70%;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .home .header {
+        font-size: 30px;
+    }
+
+    .home .container {
+        width: 80%;
+        font-size: 18px;
+        line-height: 1.4rem;
+        padding: 4%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home .header {
+        font-size: 26px;
+    }
+
+    .home .container {
+        width: 90%;
+        font-size: 16px;
+        padding: 5%;
+    }
+
+    .home p::first-letter {
+        font-size: 22px;
+    }
+}
+
+

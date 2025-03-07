@@ -1,0 +1,111 @@
+.addusers{
+    height: 100vh;
+    width: 100%;
+    background: url('../Images/images.png') ;
+    background-size: cover;
+}
+.addusers h1{
+    text-align: center;
+}
+.addusers form{
+    margin: 5% auto;
+    border: none;
+    height: 43%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.addusers input{
+    margin: 2vh;
+    height: 6vh;
+    width: 80%;
+    background: transparent;
+    border: none;
+    border-bottom: chocolate solid;
+}
+
+.addusers input::placeholder{
+    color: coral;
+    text-align: center;
+}
+.addusers input:focus{
+    border: solid chocolate;
+    border-bottom: none;
+}
+.addusers button{
+    border-style: none;
+    height: 8vh;
+    width: 25%;
+    background: cornflowerblue;
+    margin:auto ;
+    border-radius: 34px;
+    color: whitesmoke;
+}
+.addusers button:hover{
+    color: black;
+    transform: scale(0.9);
+    background: cyan;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .addusers form {
+        width: 70%;
+    }
+
+    .addusers input {
+        width: 85%;
+    }
+
+    .addusers button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .addusers h1 {
+        font-size: 28px;
+    }
+
+    .addusers form {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .addusers input {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .addusers button {
+        width: 60%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .addusers {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .addusers h1 {
+        font-size: 24px;
+    }
+
+    .addusers form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .addusers input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .addusers button {
+        width: 70%;
+        font-size: 16px;
+    }
+}

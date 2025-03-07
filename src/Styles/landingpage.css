@@ -1,0 +1,165 @@
+.landingpage {
+    height: 100vh;
+    width: 100%;
+    background: url('../Images/library.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .landingpage .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+.landingpage .container {
+    width: 45%;
+    max-width: 600px;
+    min-width: 320px;
+    background: rgba(0, 128, 128, 0.7);
+    box-shadow: inset 1px 1px 11px 6px black;
+    padding: 5vh 3vw;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Button Container */
+.landingpage .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 80%;
+    margin: 10px auto;
+    border: solid 1px white;
+    box-shadow: inset 1px 1px 11px 6px black;
+    border-radius: 40px;
+}
+
+.landingpage .btn-container button {
+    width: 50%;
+    height: 100%;
+    font-size: 16px;
+    transition: all 0.5s;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Admin & User Button */
+.landingpage .adminBtn {
+    margin-left:-50%;
+    box-shadow:inset  1px 1px 11px 6px rgb(58, 58, 223);
+}
+.landingpage .userBtn {
+    margin-left: 50%;
+    box-shadow: inset  1px 1px 11px 6px rgb(0, 255, 145);    
+}
+
+
+/* Form Container */
+.landingpage .form-container form {
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.landingpage .form-container input {
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 18px;
+    color: aliceblue;
+    outline: none;
+    margin: 2%;
+}
+
+.landingpage .form-container input:focus {
+    border: 2px solid white;
+}
+
+.landingpage .form-container input::placeholder {
+    font-size: 16px;
+    color: aliceblue;
+}
+
+.landingpage .form-container button {
+    background: #484848;
+    height: 45px;
+    width: 50%;
+    border-radius: 15px;
+    border: none;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15px auto;
+}
+
+.landingpage .form-container button:hover {
+    background: rgb(44, 7, 232);
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .landingpage .container {
+        width: 80%;
+        padding: 3vh 4vw;
+    }
+
+   .landingpage .btn-container {
+        width: 90%;
+        height: 45px;
+    }
+
+   .landingpage .form-container form {
+        width: 100%;
+        height: auto;
+    }
+
+   .landingpage .form-container input {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+   .landingpage .form-container button {
+        width: 60%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+   .landingpage .container {
+        width: 95%;
+        padding: 4vh 5vw;
+    }
+
+   .landingpage .btn-container {
+        height: 40px;
+        width: 100%;
+    }
+
+   .landingpage .form-container form {
+        width: 100%;
+        padding: 15px;
+    }
+
+   .landingpage .form-container input {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+   .landingpage .form-container button {
+        width: 70%;
+        height: 40px;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,178 @@
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(blue, rgba(255, 255, 255, 0.008));
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.navbar .logo{
+  height: auto;
+  width: 30%;
+}
+.navbar .logo img{
+  display: block;
+  margin: auto;
+  height: 10vh;
+  width: 200px;
+}
+
+/* Menu icon for mobile */
+.navbar .menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: lightgray;
+}
+
+/* Confirmation Modal */
+.confirmation-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.confirmation-modal .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.confirmation-modal .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirmation-modal button {
+  flex: 1;
+  margin: 10px;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.confirmation-modal .yes {
+  background-color: rgba(0, 10, 202, 0.651);
+  color: white;
+}
+
+.confirmation-modal .no {
+  background-color: #ccc;
+  color: black;
+}
+
+.confirmation-modal .no:hover {
+  background-color: #aaa;
+}
+
+/* Responsive Design */
+/* @media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .navbar .logo img {
+    height: 7vh;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .menu-icon {
+    display: block;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 139, 0.9);
+    display: none;
+    padding: 10px 0;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .navbar .logo img {
+    height: 6vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar .logo img {
+    height: 5vh;
+  }
+
+  .navbar ul {
+    padding: 15px 0;
+  }
+
+  .confirmation-modal {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .confirmation-modal .buttons {
+    flex-direction: column;
+  }
+
+  .confirmation-modal button {
+    width: 100%;
+    margin: 5px 0;
+  }
+} */
